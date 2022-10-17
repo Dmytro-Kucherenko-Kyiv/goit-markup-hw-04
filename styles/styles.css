@@ -9,6 +9,7 @@
   --button-active: #188CE8;
   --body-color: #F5F5F5;
   --bottom-color: #ECECEC;
+  --icon-color: #AFB1B8;
 }
 
 body { 
@@ -142,6 +143,13 @@ color: var(--primary-text-color);
 .banner {
   background: var(--background-hero-footer);
   padding: 200px 0;
+  background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../img/baner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner-title {
@@ -276,11 +284,39 @@ color: var(--primary-text-color);
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-text-color);
   
 }
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background: tomato;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
 
 /*------------------- portfolio -------------------*/
 
