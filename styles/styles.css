@@ -76,7 +76,6 @@ ul {
 
 .header-navigation {
   display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -93,12 +92,13 @@ ul {
 }
 
 .header-list {
-  margin: 32px 318px 32px 0px;
+  margin: 32px 318px 32px 93px;
   display: flex;
   gap: 50px;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color)
 }
 
@@ -141,7 +141,8 @@ align-items:center;
 gap: 10px;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -203,7 +204,7 @@ gap: 10px;
 
 .hero-item:nth-child(2),
 .hero-item:nth-child(3) {
-  height: 74px;
+  height: 224px;
 }
 
 .hero-list {
@@ -212,12 +213,18 @@ gap: 10px;
   gap: 30px;
 }
 
-.hero-icon {
+.hero-icon-box {
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background: var(--background-our-team);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-icon {
 }
 
 .hero-title {
@@ -361,11 +368,13 @@ gap: 10px;
   fill: var(--icon-color)
 }
 
-.partners-link:hover {
+.partners-link:hover,
+.partners-link:focus {
   border-color: var(--accent-color);
 }
 
-.partners-link:hover .partners-icon{
+.partners-link:hover .partners-icon,
+.partners-link:focus .partners-icon{
   fill: var(--accent-color);
 }
 
@@ -496,7 +505,8 @@ address{
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact-link:hover {
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -506,7 +516,8 @@ address{
   color: var(--white-color);
 }
 
-.adds:hover {
+.adds:hover,
+.adds:focus {
   color: var(--accent-color);
 }
 
@@ -514,6 +525,8 @@ address{
 }
 
 .footer-soc-title {
+font-weight: 700;
+font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--white-color);
